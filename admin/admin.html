@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <aside class="sidebar">
+      <h2>📚 BookingApp</h2>
+      <nav>
+        <ul>
+          <li><a href="add-teacher.html">➕ Add Teacher</a></li>
+          <li><a href="view-teachers.html">🧑‍🏫 Manage Teachers</a></li>
+          <li><a href="approve-students.html">✅ Approve Students</a></li>
+          <li><a href="../auth/login.html" class="logout">🚪 Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="dashboard-main">
+      <header>
+        <h1 id="welcome-message">Welcome</h1>
+
+        <p>Manage the system from this dashboard</p>
+      </header>
+
+      <section class="quick-actions">
+        <div class="card">
+          <h3>➕Add Teacher</h3>
+          <a href="add-teacher.html">Go</a>
+        </div>
+        <div class="card">
+          <h3>🧑‍🏫Manage Teachers</h3>
+          <a href="view-teachers.html">Go</a>
+        </div>
+        <div class="card">
+          <h3>✅Approve Students</h3>
+          <a href="approve-students.html">Go</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+<script>
+  const name = localStorage.getItem("adminName") || "Admin";
+  document.getElementById("welcome-message").textContent = `Welcome, ${name}`;
+</script>
+
+</html>

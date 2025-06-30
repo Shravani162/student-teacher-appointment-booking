@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Teacher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Add New Teacher</h2>
+    <form id="addTeacherForm" class="teacher-form">
+      <div class="form-group">
+        <label for="name">👤 Name</label>
+        <input type="text" id="name" placeholder="Enter full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="department">🏢 Department</label>
+        <input type="text" id="department" placeholder="e.g. Computer Science" required />
+      </div>
+
+      <div class="form-group">
+        <label for="subject">📘 Subject</label>
+        <input type="text" id="subject" placeholder="e.g. Data Structures" required />
+      </div>
+
+      <button type="submit" class="btn-primary">Add Teacher</button>
+    </form>
+
+    <div id="msg" class="success-msg"></div>
+  </div>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

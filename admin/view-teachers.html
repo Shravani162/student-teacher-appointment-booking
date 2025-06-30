@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manage Teachers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="manage-container">
+    <h2>👨‍🏫 Manage Teachers</h2>
+    <table id="teachersTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Subject</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="teachersBody"></tbody>
+    </table>
+
+    <!-- Modal for Editing -->
+    <div id="editFormContainer" class="modal hidden">
+      <div class="modal-content">
+        <h3>✏️ Edit Teacher</h3>
+        <form id="editTeacherForm">
+          <input type="text" id="editName" placeholder="Name" required />
+          <input type="text" id="editDepartment" placeholder="Department" required />
+          <input type="text" id="editSubject" placeholder="Subject" required />
+          <input type="hidden" id="editId" />
+          <div class="modal-buttons">
+            <button type="submit" class="btn-primary">Update</button>
+            <button type="button" class="btn-secondary" id="cancelEdit">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="status" class="success-msg"></div>
+  </div>
+
+  <script type="module" src="view-teachers.js"></script>
+</body>
+</html>

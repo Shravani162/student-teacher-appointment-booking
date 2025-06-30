@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Login - Mentor Meet</title>
+ 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fce4ec, #f3e5f5);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      padding: 35px 45px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 360px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #4e342e;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 5px;
+      font-weight: 600;
+      color: #5d4037;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #8d6e63;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #6d4c41;
+    }
+
+    p {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    p a {
+      color: #5d4037;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    p a:hover {
+      text-decoration: underline;
+    }
+
+    #error {
+      margin-top: 12px;
+      text-align: center;
+      color: red;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Student Login</h2>
+    <form id="studentLoginForm">
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="register.html">Register Here</a></p>
+
+    <div id="error"></div>
+  </div>
+
+  <script type="module" src="student-auth.js"></script>
+</body>
+</html>
