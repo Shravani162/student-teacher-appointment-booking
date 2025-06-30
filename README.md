@@ -3,6 +3,7 @@ A web-based appointment scheduling system designed to streamline communication a
 
 
 🚀 Features
+
 👨‍🎓 Student
 1. Register and log in
 2. Search for teachers by name, department, or subject
@@ -24,26 +25,42 @@ A web-based appointment scheduling system designed to streamline communication a
 
 🧱 System Architecture
 Frontend: HTML, CSS, JavaScript
+
 Backend/Database: Firebase (Firestore for data, Auth for authentication)
+
 Hosting: Firebase Hosting or any cloud platform
+
 Authentication: Firebase Auth for secure login/registration
+
 Logging: JavaScript-based logging for all actions performed by users
 
 
 📦 Modules
+
 auth.js – Authentication and user session handling
+
 appointment.js – Booking, approval, and cancellation logic
+
 admin.js – Admin panel for managing users and teachers
+
 firebase-config.js – Firebase initialization
+
+
+
 logging.js – JavaScript logging wrapper to log all user activities
+
 styles.css – Styling and layout
+
 index.html, login.html, dashboard.html, etc.
 
 
 🛠️ Technologies Used
 HTML5 / CSS3
+
 JavaScript 
+
 Firebase (Auth, Firestore, Hosting)
+
 Git & GitHub (for version control)
 
 
